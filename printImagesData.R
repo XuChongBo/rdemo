@@ -1,0 +1,6 @@
+source("./myImagePlot.R")
+images=read.csv("/Users/xcbfreedom/projects/data/Kaggle/DogVsCatData/DogVsCat_train_feature_1w.csv") 
+#images=read.csv("../data/valid.csv") 
+b=as.matrix(images[23,2:785],rownames.force=NA) 
+b=matrix(b,28,28,byrow=TRUE) 
+myImagePlot(b) 
